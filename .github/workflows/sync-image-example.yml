@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: centos
 
     steps:
     - name: Git pull
@@ -27,7 +27,7 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/userxy2015/ngnix:latest docker://registry.cn-guangzhou.aliyuncs.com/gorgor1065/ngnix:latest
+         skopeo copy docker://docker.io/mysql:8.0.35 docker://registry.cn-guangzhou.aliyuncs.com/you2024/mysql:8.0.35
          
          
          
