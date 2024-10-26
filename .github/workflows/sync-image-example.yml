@@ -30,4 +30,3 @@ jobs:
          skopeo copy docker://docker.io/mysql:8.0.35 docker://registry.cn-guangzhou.aliyuncs.com/you2024/mysql:8.0.35
          
          
-         
