@@ -29,6 +29,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/quay.io/minio/minio docker://registry.cn-guangzhou.aliyuncs.com/you2024/minio
+         skopeo copy docker://docker.io/quay.io/minio/minio:RELEASE.2023-12-20T01-00-02Z docker://registry.cn-guangzhou.aliyuncs.com/you2024/minio
          
          
