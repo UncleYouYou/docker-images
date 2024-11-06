@@ -1,7 +1,7 @@
 name: Sync Image to Aliyun  Example
 # Mysql 8.0.35
 # skopeo copy docker://docker.io/mysql:8.0.35 docker://registry.cn-guangzhou.aliyuncs.com/you2024/mysql:8.0.35
-
+#  skopeo copy docker://docker.io/redis:7.0.15 docker://registry.cn-guangzhou.aliyuncs.com/you2024/redis:7.0.15
 on:
   push:
     branches: [ "main" ]
@@ -29,6 +29,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/redis:7.0.15 docker://registry.cn-guangzhou.aliyuncs.com/you2024/redis:7.0.15
+         skopeo copy docker://docker.io/canal/canal-server:v1.1.1 docker://registry.cn-guangzhou.aliyuncs.com/you2024/canal-server:v1.1.1
          
          
