@@ -29,6 +29,6 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/canal/canal-server:v1.1.1 docker://registry.cn-guangzhou.aliyuncs.com/you2024/canal-server:v1.1.1
+         skopeo copy docker://docker.io/canal/canal-server:v1.1.7 docker://registry.cn-guangzhou.aliyuncs.com/you2024/canal-server:v1.1.7
          
          
